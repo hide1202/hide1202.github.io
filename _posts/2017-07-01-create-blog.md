@@ -51,7 +51,9 @@ Gem을 통해 `bundler` 를 설치하자. 이제 Jekyll 명령어를 `bundle exe
 
 # Troubleshooting
 macOS Sierra에서는 `nokogiri` 설치(의존에 의해 간접설치됨)에서 오류가 발생할 수 있다. 그럼 아래 명령어를 통해 `nokogiri`를 설치하면 된다.
-- `sudo gem install nokogiri -- --use-system-libraries=true --with-xml2-include=/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/libxml2/`
+```
+sudo gem install nokogiri -- --use-system-libraries=true --with-xml2-include=/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/libxml2/
+```
 
 # 포스트 쓰기
 포스트는 특정 제목으로 작성되어야 한다. `YYYY-MM-DD-{TITLE}.md` 로 작성하면 된다.

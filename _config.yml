@@ -70,16 +70,16 @@ social:
 
 # Analytics
 analytics:
-  provider               : false # false (default), "google", "google-universal", "custom"
+  provider               : "google-universal" # false (default), "google", "google-universal", "custom"
   google:
-    tracking_id          :
+    tracking_id          : "UA-101954580-1"
 
 
 # Site Author
 author:
   name             : "Viewpoint"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "I am an developer."
+  bio              : "여러가지에 관심을 가지고 있는 개발자입니다."
   location         : "South korea"
   email            :
   uri              :

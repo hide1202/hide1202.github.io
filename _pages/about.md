@@ -5,8 +5,12 @@ haste_logo:
   - url: /assets/images/toast_haste.png
     image_path: /assets/images/toast_haste.png
     alt: "TOAST Haste"
-last_modified_at: 2017-07-02T11:20:00+09:00
+last_modified_at: 2017-07-02T23:25:00+09:00
 ---
+
+## Profile
+- Name : Tae-gyeong Kim
+- Job : Developer
 
 ## Languages and skill level
 - C# : :star2: :star2: :star2:
@@ -32,3 +36,4 @@ last_modified_at: 2017-07-02T11:20:00+09:00
 {% include gallery id="haste_logo" %}
 - TOAST Haste : Asynchronous Game Server Framework
     - Apache license 2.0
+    - Role : Developer, Commiter, and Project manager

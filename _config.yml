@@ -7,7 +7,7 @@
 
 # Site Settings
 locale                   : "ko"
-title                    : "Viewpoint's tech blog"
+title                    : "Viewpoint's 기술 블로그"
 title_separator          : "-"
 name                     : "Viewpoint"
 description              : "An amazing website."
@@ -78,7 +78,7 @@ analytics:
 # Site Author
 author:
   name             : "Viewpoint"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  avatar           : "/assets/images/profile.jpg"
   bio              : "여러가지에 관심을 가지고 있는 개발자입니다."
   location         : "South korea"
   email            :

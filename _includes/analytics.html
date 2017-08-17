@@ -1,3 +1,5 @@
+{% if jekyll.environment == "production" %}
+
 {% if site.analytics.provider and page.analytics != false %}
 
 {% case site.analytics.provider %}
@@ -8,5 +10,7 @@
 {% when "custom" %}
   {% include /analytics-providers/custom.html %}
 {% endcase %}
+
+{% endif %}
 
 {% endif %}

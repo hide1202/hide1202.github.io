@@ -25,7 +25,7 @@ F#은 복잡한 문제들을 간단한 코드를 작성해서 해결하기 위�
 - 불변 데이터를 위한 컬렉션 타입들
 - 익명 함수 표현(Lambda expressions)
 - 함수 인수의 부분 적용 : 인수를 부분 적용함으로서 나머지 인수를 요구하는 새로운 함수를 만들 수 있다.
-- Code Quotations, a feature that enables you to manipulate F# expressions programmatically. 
+- Code Quotations : F# 표현식을 프로그래밍적으로 조작할 수 있는 기능.
 
 F#은 아래와 같이 객체 지향 프로그래밍과 닷넷 프레임워크 기능을 지원한다.
 - 닷넷 프레임워크 객체 모델 : 프로퍼티, 메소드, 이벤트을 가진 객체들; 다형성 또는 가상 함수들; 상속; 인터페이스;

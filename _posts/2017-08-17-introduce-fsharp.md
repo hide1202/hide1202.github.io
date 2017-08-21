@@ -1,5 +1,5 @@
 ---
-title: "F# beginning : (1) F# 시작하기"
+title: "F# beginning : (1) F# 소개"
 categories:
   - Fsharp
 tags:

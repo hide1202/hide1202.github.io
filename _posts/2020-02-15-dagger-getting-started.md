@@ -32,7 +32,7 @@ Dagger 를 사용하기 위해선 우선 Dagger 를 프로젝트에 추가해야
 
 아래 내용을 app 모듈의 build.gradle 의 `dependencies` 에 추가하자.
 
-(2020년 2월 15일 기준, 최신 버전 2.26을 적용했다. 버전을 번경하고 싶다면 모든 버전을 통일해서 변경해야한다.)
+(2020년 2월 15일 기준, 최신 버전 2.26을 적용했다. 버전을 번경하고 싶다면 모든 버전을 통일해서 변경하면 된다.)
 
 {% highlight gradle linenos %}
 dependencies {
@@ -54,12 +54,13 @@ apply plugin: 'kotlin-kapt'
 의존이 잘 추가되었는지 빌드를 해보자. 빌드에 성공했다면 의존이 제대로 추가되었다고 볼 수 있다.
 
 ## Application 추가
-Application 에도 작업이 필요한데 그 전에 Application 을 추가해야 한다. 대부분 서드파티 SDK 때문이더라도 Application 을 오버라이드 해서 사용하고 있겠지만, 여기서 한번 더 짚어본다.
-
-아래 클래스를 추가한다.
+Application 을 추가해보자. 기존 Application 과 다른 점이라면 `DaggerApplication` 을 상속한다는 점이다.
 
 {% highlight kotlin linenos %}
-class App : Application() {
+class App : DaggerApplication() {
+    override fun applicationInjector(): AndroidInjector<out DaggerApplication>? {
+      // TODO 구현해야함
+    }
 }
 {% endhighlight %}
 
@@ -70,17 +71,6 @@ class App : Application() {
     android:name=".App">
     <!--이하 생략-->
 </application>
-{% endhighlight %}
-
-## DaggerApplication 적용
-위에서 추가한 Application 을 상속한 클래스의 부모를 Application 에서 DaggerApplication 으로 변경한다.
-
-{% highlight kotlin linenos %}
-class App : DaggerApplication() {
-    override fun applicationInjector(): AndroidInjector<out DaggerApplication>? {
-      // TODO 구현해야함
-    }
-}
 {% endhighlight %}
 
 아직 `fun applicationInjector()` 메소드가 구현되어있지 않기 때문에 빌드가 되지 않는다. `ApplicationComponent` 를 작성해보자.

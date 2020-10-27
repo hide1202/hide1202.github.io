@@ -6,6 +6,7 @@ tags:
   - Blog
   - Jekyll
   - minimal-mistakes
+toc: true
 ---
 
 # 발단

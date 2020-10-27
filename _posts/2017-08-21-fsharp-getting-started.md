@@ -16,6 +16,7 @@ fsi_result:
   - url: /assets/images/posts/fsharp-getting-started/fsi-result.png
     image_path: /assets/images/posts/fsharp-getting-started/fsi-result.png
     alt: "FSI-Result"
+toc: true
 ---
 
 # 차례

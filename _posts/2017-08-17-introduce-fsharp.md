@@ -4,6 +4,7 @@ categories:
   - Fsharp
 tags:
   - Fsharp
+toc: true
 ---
 
 # 왜 F# 인가?

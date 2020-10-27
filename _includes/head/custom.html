@@ -1,5 +1,11 @@
-<!-- start custom head snippets -->
+{% if jekyll.environment == "production" %}
+<!-- For google adsense -->
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+  (adsbygoogle = window.adsbygoogle || []).push({
+    google_ad_client: "ca-pub-1458349835267871",
+    enable_page_level_ads: true
+  });
+</script>
+{% endif %}
 
-<!-- insert favicons. use http://realfavicongenerator.net/ -->
-
-<!-- end custom head snippets -->

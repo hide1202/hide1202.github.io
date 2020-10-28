@@ -42,6 +42,7 @@ toc: true
 ### Open Source
 {% include gallery id="haste_logo" %}
 - TOAST Haste : Asynchronous Game Server Framework
+    - Java
     - Apache license 2.0
     - Role : Developer, Commiter, and Project manager
 
@@ -49,3 +50,10 @@ toc: true
 
 ### Hakuna
 - [Hakuna Android Application](https://play.google.com/store/apps/details?id=com.movefastcompany.bora)
+    - Jetpack
+    - Data Binding
+    - Retrofit2
+    - RxJava2
+    - Fresco
+    - Dagger2
+    - WebRTC

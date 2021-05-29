@@ -82,7 +82,7 @@ sudo docker run --rm -p 8887:8887 -it registry.jetbrains.team/p/prj/containers/p
 
 앞에서 언급했지만 접근시 모든 사용자가 동일한 화면을 보고 쓸 수 있게 된다. 따라서, Public IP 로 접근가능하게 하고 토큰 등을 활용하는 것보다는 네트워크를 격리하는게 더 옳은 방법이다.
 
-어떻게 활용할지 아직은 미지수인데, 아이패드에서 조금씩 써볼 생각이다. ~그러려면 얼른 매직 키보드를 사야...~
+어떻게 활용할지 아직은 미지수인데, 아이패드에서 조금씩 써볼 생각이다. ~~그러려면 얼른 매직 키보드를 사야...~~
 
 # References
 - Projector-Server : [https://github.com/JetBrains/projector-server](https://github.com/JetBrains/projector-server)

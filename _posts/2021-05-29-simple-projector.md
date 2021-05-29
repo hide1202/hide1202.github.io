@@ -70,7 +70,8 @@ Projector 는 기본적으로 8887 포트를 사용한다. Azure VM 에서는 (�
 ## 이미지 실행
 아래 커맨드를 통해서 Docker 이미지를 실행한다. 가장 기본적인 명령어를 사용했는데, 기타 파라미터는 목적에 맞게 사용하면 된다.
 
-(참고로 mount 설정을 안 했기 때문에 서버가 내려가면 코드들이 그대로 날아간다. 실사용 목적이라면 최소 mount 설정은 하고 실행하자)
+참고로 mount 설정을 안 했기 때문에 서버가 내려가면 코드들이 그대로 날아간다. 실사용 목적이라면 최소 mount 설정은 하고 실행하자. 
+mount 설정은 [이 곳](https://github.com/JetBrains/projector-docker/blob/master/run-container-mounted.sh)을 참고하면 된다.
 
 ```
 sudo docker run --rm -p 8887:8887 -it registry.jetbrains.team/p/prj/containers/projector-idea-c

@@ -68,9 +68,21 @@ sudo docker run --rm -p 8887:8887 -it registry.jetbrains.team/p/prj/containers/p
 ```
 
 ## 실행
-이제 웹브라우저를 통해 구축한 해당 IP 로 접근해보자. 웹브라우저에서 실행되는 IntelliJ 를 볼 수 있다! (스샷에서 IP는 깔끔하게 제거했다;)
+이제 웹브라우저를 통해 구축한 해당 IP 로 접근해보자. 웹브라우저에서 실행되는 IntelliJ 를 볼 수 있다!!
 
 {% include gallery id="run_projector" %}
+
+## (참고)
+접근하는 모든 클라이언트는 동일한 화면을 보게된다. 즉, 다수의 사람이 읽고 쓸 수 있게 된다는 의미다.
+
+추가로 쓰기 권한을 가진 사람이 보고 있는 화면에 따라 윈도우 크기가 변경된다. (빈 곳은 초록색으로 채워진다)
+
+# 결론
+가볍게 설치해보고 잠깐 실행만 해봤는데, 실사용을 위해선 보안을 어떻게 해야할지 고민해봐야한다.
+
+앞에서 언급했지만 접근시 모든 사용자가 동일한 화면을 보고 쓸 수 있게 된다. 따라서, Public IP 로 접근가능하게 하고 토큰 등을 활용하는 것보다는 네트워크를 격리하는게 더 옳은 방법이다.
+
+어떻게 활용할지 아직은 미지수인데, 아이패드에서 조금씩 써볼 생각이다. ~그러려면 얼른 매직 키보드를 사야...~
 
 # References
 - Projector-Server : [https://github.com/JetBrains/projector-server](https://github.com/JetBrains/projector-server)

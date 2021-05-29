@@ -17,7 +17,8 @@ toc: true
 ---
 
 # Projector ?!
-Projector 는 Swing GUI 어플리케이션을 원격으로 실행해주는 기술로, Jetbrains 에서 개발했으며 현재 오픈소스로 관리되고 있다. 
+`Projector` 는 Swing GUI 어플리케이션을 원격으로 실행해주는 기술로, Jetbrains 에서 개발했으며 현재 오픈소스로 관리되고 있다.
+
 이를 이용해 Swing GUI 로 개발된 IntelliJ 플랫폼을 원격으로 실행할 수 있고, 현재 대부분의 Jetbrains IDE 들을 실행해볼 수 있다.
 
 원격 실행은 웹에서 할 수 있고, Electron 기반의 Projector-Client 를 이용해서도 가능하다.
@@ -55,8 +56,16 @@ docker pull registry.jetbrains.team/p/prj/containers/projector-idea-c
 ## 네트워크 포트 설정
 Projector 는 기본적으로 8887 포트를 사용한다. Azure VM 에서는 (당연하게도) 해당 포트가 열려있지 않기 때문에 인바운드 규칙에 8887 을 열어줘야 한다.
 
-(주의) 테스트를 위해 public 으로 열여서 확인한다. Projector 를 기본 설치할 경우 별다른 보안 설정이 되어있지 않으므로 보안에 유의해야한다.
+{% capture notice-warning %}
+테스트를 위해 public 으로 열여서 확인한다. Projector 를 기본 설치할 경우 별다른 보안 설정이 되어있지 않으므로 보안에 유의해야한다.
+
 설치/실행을 위한 테스트 목적이라면 public 으로 열어서 확인만 해보고, 실사용시에는 LAN 환경(혹은 VPN을 구축해서 사용)을 이용하거나 token 파라미터 등을 이용하는게 좋다.
+{% endcapture %}
+
+<div class="notice--warning">
+  <h4 class="no_toc">주의:</h4>
+  {{ notice-warning | markdownify }}
+</div>
 
 ## 이미지 실행
 아래 커맨드를 통해서 Docker 이미지를 실행한다. 가장 기본적인 명령어를 사용했는데, 기타 파라미터는 목적에 맞게 사용하면 된다.

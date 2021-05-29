@@ -9,22 +9,33 @@ last_modified_at: 2019-09-07T02:00:00+09:00
 toc: true
 ---
 
-## Profile
 - Name : Tae-gyeong Kim
 - Job : Developer
 
-## Languages and skill level
+# Languages and skill level
+- Kotlin : ★ ★ ★ ★ ★
 - C# : ★ ★ ★ ☆ ☆ 
-- Kotlin : ★ ★ ★ ★ ☆
 - Java : ★ ★ ★ ☆ ☆
 - Objective-C : ★ ☆ ☆ ☆ ☆
 - Scala : ★ ☆ ☆ ☆ ☆
 
-## Companies
-- NHN (2014.01 ~ 2019.05)
+# Companies
 - Hyperconnect (2019.05 ~ )
+- NHN (2014.01 ~ 2019.05)
 
-## Projects in NHN
+## Hyperconnect (2019 ~)
+
+### Hakuna
+- [Hakuna Android Application](https://play.google.com/store/apps/details?id=com.movefastcompany.bora)
+    - Jetpack
+    - Data Binding
+    - Retrofit2
+    - RxJava2
+    - Fresco
+    - Dagger2
+    - WebRTC
+
+## NHN (2014 ~ 2019)
 
 ### Game Platform (In-house platform)
 - iOS SDK for Game Platform (Objective-C)
@@ -45,15 +56,3 @@ toc: true
     - Java
     - Apache license 2.0
     - Role : Developer, Commiter, and Project manager
-
-## Projects in Hyperconnect
-
-### Hakuna
-- [Hakuna Android Application](https://play.google.com/store/apps/details?id=com.movefastcompany.bora)
-    - Jetpack
-    - Data Binding
-    - Retrofit2
-    - RxJava2
-    - Fresco
-    - Dagger2
-    - WebRTC

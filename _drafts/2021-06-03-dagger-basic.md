@@ -60,3 +60,11 @@ CPU는 자신이 하는 일에 영향을 받지 않으면서, 좀 더 크거나 
 위 코드는 동일한 개체간 의존성이라도 어떻게 구현하느냐에 따라서 확장성있게 만들 수 있느냐를 보여주는 대표적인 예이다.
 
 그리고 후자를 `외부에서 의존성을 받는다` 라고 하여 _**`의존성 주입`**_ 이라고 표현한다.
+
+위키피디아의 `Dependency injection` 정의도 아래에 첨부했다.
+
+> In software engineering, `dependency injection` is a technique in which an object receives other objects that it depends on. These other objects are called dependencies.
+
+참고로 첫 번째 코드처럼 의존이 개체의 라이프사이클과 동일(생성과 함께 의존도 생성되고, 파괴될 때 함께 파괴된다)한 것을 `Composition` 이라고 한다.
+
+## Dependency Injection Framework

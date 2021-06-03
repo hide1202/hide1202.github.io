@@ -42,7 +42,7 @@ if ((item.getOrder() & Menu.CATEGORY_SECONDARY) == 0) {
 ### 모든 탭 선택을 백스택으로!
 모든 탭 이동을 백스택에 쌓고 싶으면, 메뉴 XML 에서 모든 메뉴에 `android:menuCategory="secondary"` 속성을 부여하자. 그러면 위 `NavigationUI` 의 if 문에 의해 `setPopUpTo` 로직이 수행되지 않는다.
 
-{% highlight java linenos %}
+{% highlight xml linenos %}
 <item
     android:id="@+id/home_menu"
     android:icon="@drawable/ic_home"

@@ -69,7 +69,33 @@ CPU는 자신이 하는 일에 영향을 받지 않으면서, 좀 더 크거나 
 
 **그렇다고해서 구성이 나쁜 것은 아니다.** 
 
+### 구성
+
 캡슐화를 위해 의존 개체를 개체 안으로 얼마든지 숨길 수 있다. 무조건적으로 의존성 주입을 사용하는게 아니라, 확장성이 필요한 의존을 선택적으로 주입받는게 중요하다.
+
+위 예를 확장해서 얘기하자면, CPU, Memory 등 부품은 서로 의존하면서 확장성있게 구현했다고 하자. 하지만 이를 사용하는 본체는 사용자가 알 필요가 없을 수도 있다. 필요하다면 본체를 본해해서 조립하면 된다. 코드로 표현해보자면 대략 이런 모양일 것이다.
+
+{% highlight kotlin linenos %}
+class Computer {
+  private val cpu: Cpu = IntelCpu()
+  private val memory: Memory = DramMemory()
+  private val gpu: Gpu = NvidiaGpu()
+  private val storage: Stroage = M2Ssd()
+
+  fun run() {
+    storage.initilize()
+    memory.initilize()
+    gpu.initilize()
+    cpu.initilize()
+  }
+}
+
+fun main() {
+  Computer().run()
+}
+{% endhighlight %}
+
+이 코드를 보고 의존성 주입을 사용하지 않았다고 할 수도 있겠지만, 의도에 따라 구성을 사용했을 수도 있다는 점에 유의하자.
 
 ## Dependency Injection Framework
 위 예제 코드처럼 개체를 확장성있게 만들었다고 하더라도, 의존 변경시 번거로운건 여전하다. 개체 밖에선 여전히 어떤 개체를 의존으로 줄지 결정하고 생성해야 하기 때문이다.
